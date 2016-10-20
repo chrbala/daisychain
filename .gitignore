@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+yarn.lock
+
+# testing
+coverage
+
+# production
+dist
+
+# misc
+.DS_Store
+.env
+npm-debug.log

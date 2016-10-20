@@ -1,0 +1,36 @@
+{
+  "name": "daisychain",
+  "version": "0.0.3",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrbala/daisychain"
+  },
+  "bugs": "https://github.com/chrbala/daisychain/issues",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "rollup -c",
+    "test": "ava",
+    "validate": "npm run lint && npm run test",
+    "push": "npm run validate && npm run build && npm publish"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chrbala-linter": "^1.0.0",
+    "eslint": "^3.8.1",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
