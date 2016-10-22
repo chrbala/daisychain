@@ -1,6 +1,6 @@
 {
   "name": "daisychain",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
@@ -13,7 +13,7 @@
     "build": "rollup -c",
     "test": "ava",
     "validate": "npm run lint && npm run test",
-    "push": "npm run validate && npm run build && npm publish"
+    "prepublish": "rm -rf dist && npm run validate && npm run build"
   },
   "devDependencies": {
     "ava": "^0.16.0",
