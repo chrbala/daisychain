@@ -92,7 +92,7 @@ const parsed = parseUrl.execute(url);
   parsed = [ 
     [ 'hello', 'world' ],
     [ 'key', 'value' ],
-    [ 'expletive', '$#@!' ]
+    [ 'expletive', '$#@!' ],
   ]
 */
 ```
