@@ -91,8 +91,8 @@ const parsed = parseUrl.execute(url);
 /*
   parsed = [ 
     [ 'hello', 'world' ],
-      [ 'key', 'value' ],
-      [ 'expletive', '$#@!' ]
+    [ 'key', 'value' ],
+    [ 'expletive', '$#@!' ]
   ]
 */
 ```
@@ -138,9 +138,9 @@ You can use as many arguments as you like in the chain, like so:
 ```javascript
 const mixedTypes = 
   bundle
-      (1, 'hello')
-      (2, 'other', 'values')
-      (3)
+    (1, 'hello')
+    (2, 'other', 'values')
+    (3)
 ;
 
 // mixedTypes internal value: [ [1, 'hello'], [2, 'other', 'values'], [3] ]
